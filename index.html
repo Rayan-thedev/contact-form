@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="h-screen bg-[hsl(148,38%,91%)] flex items-center justify-center">
+    <div class="py-10 bg-white rounded-lg h-fit w-140">
+        <!-- form -->
+        <form class="grid grid-cols-2 mx-5 gap-y-5 gap-x-3 h-fit">
+            <!-- form title -->
+            <h1 class="gap-10 text-2xl font-medium txt-color">Contact Us</h1>
+            <!-- name input -->
+            <!-- first name -->
+            <label class="col-start-1 row-start-2 ">
+                <legend class="legend">First Name *</legend>
+                <input class=" input" type="text" />
+            </label>
+            <!-- last name -->
+            <label class="col-start-2 row-start-2 ">
+                <legend class="legend">Last Name *</legend>
+                <input class=" input" type="text" />
+            </label>
+            <!-- Email -->
+            <label class="col-start-1 col-end-3 row-start-3 ">
+                <legend class="legend">Email *</legend>
+                <input class=" input" type="text" />
+            </label>
+            <!-- querry -->
+            <div class="grid grid-cols-2 col-start-1 col-end-3 grid-rows-2 row-start-4 h-15 gap-x-3 ">
+                <legend class="legend">Querry Type *</legend>
+                <!-- option1 -->
+                <label
+                    class="p-5 border-1 border-[hsl(187, 24%, 22%)] row-start-2 input flex justify-start items-center">
+                    <input class="mr-3"  type="radio" name=" querry">
+                    <p class="text-xs font-medium txt-color">General Enquiry</p>
+                </label>
+                <!-- option 2 -->
+                <label
+                    class="p-5 border-1 border-[hsl(187, 24%, 22%)] row-start-2 input flex justify-start items-center">
+                    <input class="mr-3" type="radio" name=" querry">
+                    <p class="text-xs font-medium txt-color">Support Request</p>
+            </label>
+            </div>
+            <!-- massage -->
+            <label class="col-start-1 col-end-3 row-start-5 ">
+                <legend class="legend">Massage *</legend>
+                <textarea class="w-full h-20 p-1 text-sm msg"></textarea>
+            </label>
+            <!-- checkbox of consent -->
+            <label class="grid grid-cols-[7%_93%] col-start-1  h-fit items-center">
+                <input  class="h-3 " type="checkbox">
+                <p class="text-xs ">I consent to being contacted by the team</p>
+            </label>
+            <!-- button -->
+             <button class="col-start-1 col-end-3 row-start-7 text-white bg-[hsl(169,82%,27%)] input  ">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
