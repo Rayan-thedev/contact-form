@@ -10,9 +10,10 @@
 </head>
 
 <body class="h-screen bg-[hsl(148,38%,91%)] flex items-center justify-center">
+    <!-- form container -->
     <div class="py-10 bg-white rounded-lg h-fit w-140">
         <!-- form -->
-        <form class="grid grid-cols-2 mx-5 gap-y-5 gap-x-3 h-fit">
+        <form class="grid mx-5 sm:grid-cols-2 sm:gap-y-5 gap-y-2 gap-x-3 h-fit">
             <!-- form title -->
             <h1 class="gap-10 text-2xl font-medium txt-color">Contact Us</h1>
             <!-- name input -->
@@ -22,18 +23,19 @@
                 <input class=" input" type="text" />
             </label>
             <!-- last name -->
-            <label class="col-start-2 row-start-2 ">
+            <label class="row-start-3 sm:col-start-2 sm:row-start-2 ">
                 <legend class="legend">Last Name *</legend>
                 <input class=" input" type="text" />
             </label>
             <!-- Email -->
-            <label class="col-start-1 col-end-3 row-start-3 ">
+            <label class="row-start-4 sm:col-start-1 sm:col-end-3 sm:row-start-3 ">
                 <legend class="legend">Email *</legend>
                 <input class=" input" type="text" />
             </label>
             <!-- querry -->
-            <div class="grid grid-cols-2 col-start-1 col-end-3 grid-rows-2 row-start-4 h-15 gap-x-3 ">
-                <legend class="legend">Querry Type *</legend>
+            <div class="grid grid-cols-1 col-start-1 grid-rows-3 row-start-5 gap-y-3 sm:grid-cols-2 sm:col-end-3 sm:grid-rows-2 sm:row-start-4 sm:h-15 gap-x-3 ">
+  
+             <legend class="legend">Querry Type *</legend>
                 <!-- option1 -->
                 <label
                     class="p-5 border-1 border-[hsl(187, 24%, 22%)] row-start-2 input flex justify-start items-center">
@@ -42,23 +44,23 @@
                 </label>
                 <!-- option 2 -->
                 <label
-                    class="p-5 border-1 border-[hsl(187, 24%, 22%)] row-start-2 input flex justify-start items-center">
+                    class="p-5 border-1 border-[hsl(187, 24%, 22%)] sm:row-start-2 row-start-3 input flex justify-start items-center">
                     <input class="mr-3" type="radio" name=" querry">
                     <p class="text-xs font-medium txt-color">Support Request</p>
             </label>
             </div>
             <!-- massage -->
-            <label class="col-start-1 col-end-3 row-start-5 ">
+            <label class="row-start-6 sm:col-start-1 sm:col-end-3 sm:row-start-5 ">
                 <legend class="legend">Massage *</legend>
                 <textarea class="w-full h-20 p-1 text-sm msg"></textarea>
             </label>
             <!-- checkbox of consent -->
-            <label class="grid grid-cols-[7%_93%] col-start-1  h-fit items-center">
+            <label class="grid grid-cols-[7%_93%] sm:col-span-2  h-fit items-center row-start-7">
                 <input  class="h-3 " type="checkbox">
                 <p class="text-xs ">I consent to being contacted by the team</p>
             </label>
             <!-- button -->
-             <button class="col-start-1 col-end-3 row-start-7 text-white bg-[hsl(169,82%,27%)] input  ">Submit</button>
+             <button class="col-start-1 sm:col-end-3 row-start-8 text-white bg-[hsl(169,82%,27%)] input  ">Submit</button>
         </form>
     </div>
 </body>
